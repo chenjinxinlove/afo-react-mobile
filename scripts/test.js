@@ -105,4 +105,11 @@ if (!resolvedEnv) {
 const testEnvironment = resolvedEnv || env;
 argv.push('--env', testEnvironment);
 // @remove-on-eject-end
+
+// var enzyme = require('enzyme');
+// var Adapter = require('enzyme-adapter-react-16');
+
+// enzyme.configure({ adapter: new Adapter() };
+
+
 jest.run(argv);
