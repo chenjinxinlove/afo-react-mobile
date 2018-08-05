@@ -1,8 +1,7 @@
-.show {
+.show{
   display: flex;
   justify-content: space-around;
 }
-
-.marginbottom {
+.marginbottom{
   margin-bottom: 10px;
 }

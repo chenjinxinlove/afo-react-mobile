@@ -1,16 +1,18 @@
 import classnames from 'classnames';
-import React, { MouseEventHandler } from 'react';
-import './style/button';
+import * as React from 'react';
+import { MouseEventHandler } from 'react';
+import './style/button.styl';
 
 export interface ButtonProps {
   effect?: 'button' | 'submit';
   type?: 'primary' | 'danger' | 'default';
-  size?: 'small' | 'normal' | ' large';
+  size?: 'small' | 'normal' | 'large';
   disabled?: boolean;
   loading?: boolean;
   inline?: boolean;
   plain?: boolean;
   icon?: string;
+  className?: string;
   onClick?: MouseEventHandler<HTMLAnchorElement>;
 }
 const rxTwoCNChar = /^[\u4e00-\u9fa5]{2}$/;
@@ -35,7 +37,10 @@ function insertSpace(child: any) {
   return child;
 }
 class Button extends React.Component<ButtonProps, any> {
-  private static defaultProps = {
+  constructor(props: ButtonProps) {
+    super(props)
+  }
+  static defaultProps = {
     effect: 'button',
     type: 'default',
     size: 'normal',
@@ -45,7 +50,7 @@ class Button extends React.Component<ButtonProps, any> {
     laoding: false,
     icon: ''
   };
-  private render () {
+  render () {
     const {
       children,
       className,
@@ -59,27 +64,27 @@ class Button extends React.Component<ButtonProps, any> {
       icon,
       onClick,
       ...restProps
-    } = this.props
-  }
-  private const kids = React.Children.map(children, insertSpace);
-
-  private const prefixCls = 'afo';
-  private const wrapCls = classnames(prefixCls, className, {
-    ['afo-button']: any,
-    [`${prefixCls}-button--${ plain ? type + 'plain' : type }`],
-    [`${prefixCls}-button--${size}`],
-    [`${prefixCls}-button-disabled`]: disabled,
-    [`${prefixCls}-button-inline`]: inline,
-  });
-  return (
-    <button
-      onClick={disabled || loading ? undefined : onClick}
-      type={effect}
-      disabled={disabled}
-      className={wrapCls}
-    >
-      { kids }
-    </button>
-  )
+    } = this.props;
+    const kids = React.Children.map(children, insertSpace);
+    const prefixCls: string = 'afo';
+    const wrapCls = classnames(prefixCls, className, {
+      ['afo-button']: true,
+      [`${prefixCls}-button--${ plain ? type + 'plain' : type }`]: true,
+      [`${prefixCls}-button--${size}`]: true,
+      [`${prefixCls}-button-disabled`]: disabled,
+      [`${prefixCls}-button-inline`]: inline,
+    });
+    return (
+        <button
+          onClick={disabled || loading ? undefined : () => onClick}
+          type={effect}
+          {...restProps}
+          disabled={disabled}
+          className={wrapCls}
+        >
+          { kids }
+        </button>
+      )
+    }
 }
 export default Button;

@@ -10,6 +10,9 @@
   },
   "rules": {
     "member-access": false, // 设置成员对象的访问权限（public,private,protect)
-    "member-ordering": false
+    "member-ordering": false,
+    "interface-name": false,
+    "object-literal-sort-keys": false,
+    "allowSyntheticDefaultImports": true
   }
 }
