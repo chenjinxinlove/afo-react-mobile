@@ -1,5 +1,6 @@
 import classnames from 'classnames';
 import React, { MouseEventHandler } from 'react';
+import './style/button';
 
 export interface ButtonProps {
   effect?: 'button' | 'submit';
@@ -60,12 +61,13 @@ class Button extends React.Component<ButtonProps, any> {
       ...restProps
     } = this.props
   }
-  const kids = React.Children.map(children, insertSpace);
-  const prefixCls = 'afo';
-  const wrapCls = classnames(prefixCls, className, {
-    ['afp-button'],
+  private const kids = React.Children.map(children, insertSpace);
+
+  private const prefixCls = 'afo';
+  private const wrapCls = classnames(prefixCls, className, {
+    ['afo-button']: any,
     [`${prefixCls}-button--${ plain ? type + 'plain' : type }`],
-    [`${prefixCls}-button--${this.size}`],
+    [`${prefixCls}-button--${size}`],
     [`${prefixCls}-button-disabled`]: disabled,
     [`${prefixCls}-button-inline`]: inline,
   });
@@ -80,3 +82,4 @@ class Button extends React.Component<ButtonProps, any> {
     </button>
   )
 }
+export default Button;

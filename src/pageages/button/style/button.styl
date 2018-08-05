@@ -1,0 +1,49 @@
+@require "../../../common/stylus/variable.styl"
+@require "../../../common/stylus/mixin.styl"
+.afo-button
+  display: block
+  margin: 0
+  padding: 13px 16px
+  text-align: center
+  white-space: nowrap
+  cursor: pointer
+  background: $btn-default-bgc
+  font-size: $fontsize-large
+  line-height: 1
+  outline: none
+  border: none
+  border-radius: 2px
+  box-sizing: border-box
+  border-1px($btn-default-border)
+  -webkit-tap-highlight-color: transparent
+
+.afo-button--primary
+  background: $btn-primary-bgc
+  color: $btn-default-color
+
+.afo-button--primaryplain
+  background: $btn-default-bgc
+  border-1px($btn-primary-color)
+
+.afo-button--danger
+  background: $btn-danger-bgc
+  color: $btn-default-color
+
+.afo-button--dangerplain
+  background: $btn-default-bgc
+  border-1px($btn-danger-color)
+
+.afo-button-disabled
+  background: $btn-disabled-bgc
+  border-1px($btn-disabled-bdc)
+
+.afo-button--large
+  width: 100%
+.afo-button--small
+  height: 30px
+  padding: 0 8px
+  min-width: 60px
+  font-size: $fontsize-small
+  line-height: 28px
+.afo-button-inline
+  display inline
