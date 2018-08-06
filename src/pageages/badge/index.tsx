@@ -5,7 +5,7 @@ import './style/badge.styl';
 
 
 export interface BadgeProps {
-  size?: 'large' | 'samll';
+  size?: 'large' | 'small';
   overflowCount?: number;
   corner?: boolean;
   dot?: boolean;
