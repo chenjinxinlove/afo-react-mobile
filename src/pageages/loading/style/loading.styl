@@ -1,0 +1,56 @@
+@require "../../../common/stylus/variable.styl"
+
+  .afo-loading
+    font-size: $fontsize-large-xxx
+  .afo-loading-black
+    color: black
+  .afo-loading-white
+    color: white
+    padding: 10px
+    border-radius: 3px
+    background-color: rgba(0, 0, 0, .5)
+    display: inline-block
+  .afo-loading-spinners
+    position: relative
+    display: block
+    width: 1em
+    height: 1em
+  .afo-loading-spinner
+    position: absolute
+    left: 44.5%
+    top: 37%
+    width: 2PX // for rem
+    height: 25%
+    border-radius: 50%/20%
+    opacity: .25
+    background-color: currentColor
+    animation: spinner-fade 1s linear infinite
+    for num in (1..12)
+      &:nth-child({num})
+        animation-delay: ((num - 1) / 12)s
+        transform: rotate(30deg * (num - 6)) translateY(-150%)
+
+  @keyframes spinner-fade
+    0%
+      opacity: .85
+    50%
+      opacity: .25
+    100%
+      opacity: .25
+
+  .afo-loading-circular
+    nimation-duration: 2s
+    z-index: -1
+    width: 100%
+    height: 100%
+    position: relative
+    display: inline-block
+    box-sizing: border-box
+    -webkit-animation: afo-rotate 0.8s linear infinite
+    animation: afo-rotate 0.8s linear infinite    
+
+  @keyframes afo-rotate
+    0% 
+      transform: rotate(0deg)
+    100% 
+      transform: rotate(360deg)

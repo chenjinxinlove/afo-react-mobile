@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import BadgeDemo from './pageages/badge/demo/index';
 import ButtonDemo from './pageages/button/demo/index';
 import IconDemo from './pageages/icon/demo/index';
+import LoadingDemo from './pageages/loading/demo//index';
 
 class App extends React.Component {
   public render() {
@@ -16,6 +17,7 @@ class App extends React.Component {
                 <Route path="/button" component={ButtonDemo} />
                 <Route path="/badge" component={BadgeDemo} />
                 <Route path="/icon" component={IconDemo} />
+                <Route path="/loading" component={LoadingDemo} />
               </main>
         </div>
       </BrowserRouter>
