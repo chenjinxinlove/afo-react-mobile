@@ -1,6 +1,7 @@
-import * as React from 'react';
 import { shallow } from 'enzyme';
+import * as React from 'react';
 import Button from '../../pageages/button/';
+
 
 describe('Button', () => {
   // 测试是否能正确的显示内容

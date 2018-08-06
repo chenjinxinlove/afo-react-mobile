@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import ButtonDemo from './pageages/button/demo/index'
+import BadgeDemo from './pageages/badge/demo/index';
+import ButtonDemo from './pageages/button/demo/index';
 
 class App extends React.Component {
   public render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
               </header>
               <main>
                 <Route path="/button" component={ButtonDemo} />
+                <Route path="/badge" component={BadgeDemo} />
               </main>
         </div>
       </BrowserRouter>
