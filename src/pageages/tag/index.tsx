@@ -13,7 +13,7 @@ export interface TagPropsType {
 
 export default class Tag extends React.Component<TagPropsType, any> {
   static defaultProps = {
-    type: 'defalut',
+    type: 'default',
     plain: false,
     mark: false,
     disabled: false,
