@@ -82,6 +82,7 @@ class Button extends React.Component<ButtonProps, any> {
           disabled={disabled}
           className={wrapCls}
         >
+          { icon ? <i className={'afo-icon-' + icon} /> : ''}
           { kids }
         </button>
       )
