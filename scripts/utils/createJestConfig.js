@@ -64,6 +64,7 @@ module.exports = (resolve, rootDir, isEjecting) => {
         tsConfigFile: paths.appTsTestConfig,
       },
     },
+    collectCoverage: true
   };
   if (rootDir) {
     config.rootDir = rootDir;

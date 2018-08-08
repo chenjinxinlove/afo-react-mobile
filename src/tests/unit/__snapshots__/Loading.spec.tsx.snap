@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test snapshots 1`] = `
+<div>
+  <div
+    className="afo-loading afo-loading-black"
+  >
+    <span
+      className="afo-loading-spinners"
+      style={
+        Object {
+          "height": "30px",
+          "width": "30px",
+        }
+      }
+    >
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+    </span>
+  </div>
+  <div
+    className="afo-loading afo-loading-white"
+  >
+    <span
+      className="afo-loading-spinners"
+      style={
+        Object {
+          "height": "30px",
+          "width": "30px",
+        }
+      }
+    >
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+      <i
+        className="afo-loading-spinner"
+      />
+    </span>
+  </div>
+</div>
+`;

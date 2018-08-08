@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test snapshots 1`] = `
+<div>
+  <div
+    className="show"
+  >
+    <div
+      className="afo-tag afo-tag--default"
+      style={undefined}
+    >
+      标签
+    </div>
+    <div
+      className="afo-tag afo-tag--primary"
+      style={undefined}
+    >
+      标签
+    </div>
+    <div
+      className="afo-tag afo-tag--danger"
+      style={undefined}
+    >
+      标签
+    </div>
+  </div>
+  <div
+    className="show"
+  >
+    <div
+      className="afo-tag afo-tag--defaultplain"
+      style={undefined}
+    >
+      标签
+    </div>
+    <div
+      className="afo-tag afo-tag--primaryplain"
+      style={undefined}
+    >
+      标签
+    </div>
+    <div
+      className="afo-tag afo-tag--dangerplain"
+      style={undefined}
+    >
+      标签
+    </div>
+  </div>
+  <div
+    className="show"
+  >
+    <div
+      className="afo-tag afo-tag--default afo-tag--mark"
+      style={undefined}
+    >
+      标签
+    </div>
+    <div
+      className="afo-tag afo-tag--primary afo-tag--mark"
+      style={undefined}
+    >
+      标签
+    </div>
+    <div
+      className="afo-tag afo-tag--danger afo-tag--mark"
+      style={undefined}
+    >
+      标签
+    </div>
+  </div>
+</div>
+`;

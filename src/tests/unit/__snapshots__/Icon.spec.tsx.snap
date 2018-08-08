@@ -1,0 +1,981 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test snapshots 1`] = `
+<div>
+  <div>
+    <i
+      className="afo-icon afo-icon-eye-invisible"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      eye-invisible
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-eye-visible"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      eye-visible
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-square-right"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      square-right
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-select"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      select
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-pulldown"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      pulldown
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-pullup"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      pullup
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-more"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      more
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-back"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      back
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-arrow"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      arrow
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-close"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      close
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-warn"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      warn
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-question"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      question
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-right"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      right
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-wrong"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      wrong
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-info"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      info
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-remove"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      remove
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-add"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      add
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-share"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      share
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-no-wifi"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      no-wifi
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-smile"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      smile
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-sad"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      sad
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-email"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      email
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-game"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      game
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-wifi"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      wifi
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-hot"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      hot
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-notification"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      notification
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-delete"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      delete
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-vip"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      vip
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-mute"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      mute
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-danger"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      danger
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-volume"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      volume
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-bad"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      bad
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-mobile-phone"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      mobile-phone
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-aim"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      aim
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-navigation"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      navigation
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-safe-pay"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      safe-pay
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-tag"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      tag
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-lock"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      lock
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-unlock"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      unlock
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-edit"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      edit
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-scan"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      scan
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-qr-code"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      qr-code
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-calendar"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      calendar
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-time"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      time
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-red-packet"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      red-packet
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-star"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      star
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-setting"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      setting
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-home"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      home
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-credit-card"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      credit-card
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-mall"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      mall
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-microphone"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      microphone
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-search"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      search
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-good"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      good
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-alert"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      alert
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-picture"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      picture
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-message"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      message
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-phone"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      phone
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-location"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      location
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-like"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      like
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-camera"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      camera
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-person"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      person
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-round-border"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      round-border
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-important"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      important
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-ok"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      ok
+    </span>
+  </div>
+  <div>
+    <i
+      className="afo-icon afo-icon-square-border"
+      onClick={undefined}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "32px",
+        }
+      }
+    />
+    <span>
+      square-border
+    </span>
+  </div>
+</div>
+`;

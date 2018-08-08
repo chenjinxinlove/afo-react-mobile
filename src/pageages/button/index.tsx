@@ -15,27 +15,6 @@ export interface ButtonProps {
   className?: string;
   onClick?: MouseEventHandler<HTMLAnchorElement>;
 }
-const rxTwoCNChar = /^[\u4e00-\u9fa5]{2}$/;
-const isTwoCNChar = rxTwoCNChar.test.bind(rxTwoCNChar);
-function isString(str: any) {
-  return typeof str === 'string';
-}
-function insertSpace(child: any) {
-  if (isString(child.type) && isTwoCNChar(child.props.children)) {
-    return React.cloneElement(
-      child,
-      {},
-      child.props.children.split('').join(' '),
-    );
-  }
-  if (isString(child)) {
-    if (isTwoCNChar(child)) {
-      child = child.split('').join(' ');
-    }
-    return <span>{child}</span>;
-  }
-  return child;
-}
 class Button extends React.Component<ButtonProps, any> {
   constructor(props: ButtonProps) {
     super(props)
@@ -65,7 +44,6 @@ class Button extends React.Component<ButtonProps, any> {
       onClick,
       ...restProps
     } = this.props;
-    const kids = React.Children.map(children, insertSpace);
     const prefixCls: string = 'afo';
     const wrapCls = classnames(prefixCls, className, {
       ['afo-button']: true,
@@ -76,14 +54,14 @@ class Button extends React.Component<ButtonProps, any> {
     });
     return (
         <button
-          onClick={disabled || loading ? undefined : () => onClick}
+          onClick={disabled || loading ? undefined : () => onClick()}
           type={effect}
           {...restProps}
           disabled={disabled}
           className={wrapCls}
         >
           { icon ? <i className={'afo-icon-' + icon} /> : ''}
-          { kids }
+          { children }
         </button>
       )
     }

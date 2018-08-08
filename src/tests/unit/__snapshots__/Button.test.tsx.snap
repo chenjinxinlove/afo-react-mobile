@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test snapshots 1`] = `
+<div
+  className="ButtonDeom"
+>
+  <div>
+    <div>
+      <p>
+        按钮用途
+      </p>
+      <div
+        className="show"
+      >
+        <button
+          className="afo afo-button afo-button--default afo-button--normal"
+          disabled={false}
+          laoding={false}
+          onClick={[Function]}
+          type="button"
+        >
+          
+          默认按钮
+        </button>
+        <button
+          className="afo afo-button afo-button--default afo-button--normal"
+          disabled={false}
+          laoding={false}
+          onClick={[Function]}
+          type="submit"
+        >
+          
+          提交按钮
+        </button>
+      </div>
+    </div>
+    <div>
+      <p>
+        按钮类型
+      </p>
+      <div
+        className="show"
+      >
+        <button
+          className="afo afo-button afo-button--default afo-button--normal"
+          disabled={false}
+          laoding={false}
+          onClick={[Function]}
+          type="button"
+        >
+          
+          默认按钮
+        </button>
+        <button
+          className="afo afo-button afo-button--primary afo-button--normal"
+          disabled={false}
+          laoding={false}
+          onClick={[Function]}
+          type="button"
+        >
+          
+          主要按钮
+        </button>
+        <button
+          className="afo afo-button afo-button--danger afo-button--normal"
+          disabled={false}
+          laoding={false}
+          onClick={[Function]}
+          type="button"
+        >
+          
+          危险按钮
+        </button>
+      </div>
+    </div>
+    <div>
+      <p>
+        素按钮类型
+      </p>
+      <div
+        className="show"
+      >
+        <button
+          className="afo afo-button afo-button--defaultplain afo-button--normal"
+          disabled={false}
+          laoding={false}
+          onClick={[Function]}
+          type="button"
+        >
+          
+          默认按钮
+        </button>
+        <button
+          className="afo afo-button afo-button--primaryplain afo-button--normal"
+          disabled={false}
+          laoding={false}
+          onClick={[Function]}
+          type="button"
+        >
+          
+          主要按钮
+        </button>
+        <button
+          className="afo afo-button afo-button--dangerplain afo-button--normal"
+          disabled={false}
+          laoding={false}
+          onClick={[Function]}
+          type="button"
+        >
+          
+          危险按钮
+        </button>
+      </div>
+    </div>
+    <div>
+      <p>
+        按钮大小
+      </p>
+      <div
+        className="show marginbottom"
+      >
+        <button
+          className="afo afo-button afo-button--default afo-button--normal"
+          disabled={false}
+          laoding={false}
+          onClick={[Function]}
+          type="button"
+        >
+          
+          默认按钮
+        </button>
+        <button
+          className="afo afo-button afo-button--default afo-button--small"
+          disabled={false}
+          laoding={false}
+          onClick={[Function]}
+          type="button"
+        >
+          
+          小号按钮
+        </button>
+      </div>
+      <button
+        className="afo afo-button afo-button--default afo-button--large"
+        disabled={false}
+        laoding={false}
+        onClick={[Function]}
+        type="button"
+      >
+        
+        大号按钮
+      </button>
+    </div>
+    <div>
+      <p>
+        禁用状态
+      </p>
+      <button
+        className="afo afo-button afo-button--default afo-button--normal afo-button-disabled"
+        disabled={true}
+        laoding={false}
+        onClick={undefined}
+        type="button"
+      >
+        
+        禁用状态
+      </button>
+    </div>
+    <div>
+      <p>
+        行内按钮
+      </p>
+      <button
+        className="afo afo-button afo-button--default afo-button--normal afo-button-inline"
+        disabled={false}
+        laoding={false}
+        onClick={[Function]}
+        type="button"
+      >
+        
+        行内按钮
+      </button>
+    </div>
+    <div>
+      <p>
+        loading按钮
+      </p>
+      <button
+        className="afo afo-button afo-button--default afo-button--normal"
+        disabled={false}
+        laoding={false}
+        onClick={undefined}
+        type="button"
+      >
+        
+        loading按钮
+      </button>
+    </div>
+    <div>
+      <p>
+        Icon按钮
+      </p>
+      <button
+        className="afo afo-button afo-button--default afo-button--normal"
+        disabled={false}
+        laoding={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <i
+          className="afo-icon-left"
+        />
+        Icon按钮
+      </button>
+    </div>
+  </div>
+</div>
+`;

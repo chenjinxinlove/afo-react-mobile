@@ -23,7 +23,7 @@ const IconDemo = () => {
     <div>
       {
         list.map(item => (
-          <div>
+          <div key={item}>
             <Icon type={item} />
             <span>{item}</span>
           </div>
