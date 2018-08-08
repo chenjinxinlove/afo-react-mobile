@@ -1,0 +1,27 @@
+@require "../../../common/stylus/variable.styl"
+@require "../../../common/stylus/mixin.styl"
+.afo-card
+  background: $fill-base
+  .afo-card--cell
+    width: 100%
+    display: flex
+    padding: 10px 15px
+    box-sizing: border-box
+    line-height: 24px
+    position: relative
+    background-color: #fff
+    color: #333
+    font-size: 14px
+    overflow: hidden
+    border-1px($btn-default-border)
+    .afo-card--title
+      flex: 1
+    .afo-card--label
+      font-size: 12px
+      line-height: 1.2
+      color: #666
+  .afo-card-content
+    padding: 20px
+  .afo-card-footer
+    text-align: right
+    padding: 10px 15px
