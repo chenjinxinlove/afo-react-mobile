@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar test snapshots 1`] = `
+<div>
+  <header
+    className="afo-navbar is-fixed"
+  >
+    <div
+      className="afo-navbar-button is-left"
+    >
+      <button
+        className="afo afo-button afo-button--default afo-button--normal"
+        disabled={false}
+        laoding={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <i
+          className="afo-icon-back"
+        />
+        返回
+      </button>
+    </div>
+    <h1
+      className="afo-navbar-title"
+    >
+      我是fixed标题
+    </h1>
+    <div
+      className="afo-navbar-button is-right"
+    >
+      <button
+        className="afo afo-button afo-button--default afo-button--normal"
+        disabled={false}
+        laoding={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <i
+          className="afo-icon-more"
+        />
+      </button>
+    </div>
+  </header>
+</div>
+`;
