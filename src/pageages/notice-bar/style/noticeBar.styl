@@ -1,0 +1,45 @@
+@require "../../../common/stylus/variable.styl"
+@require "../../../common/stylus/mixin.styl"
+.afo-notice-bar
+  display: flex
+  padding: 9px 15px
+  font-size: $fontsize-small
+  line-height: $line-height-paragraph
+  position: relative
+  .afo-notice-left-icon
+    height: 18px
+    min-width: 20px
+    padding-top: 1px
+    box-sizing: border-box
+    img
+      width: 16px
+      height: 16px
+      top: 10px
+      right: 10px
+  .afo-notice-right-icon
+    position: absolute
+    line-height: $line-height-base
+    top: 12px
+    right: 10px
+  .afo-notice-bar__wrap
+    flex: 1
+    height: 18px
+    overflow: hidden
+    position: relative
+  .afo-notice-bar__content
+    position: absolute
+    white-space: nowrap
+  .afo-notice-bar__play
+    animation: afo-notice-bar-play linear both
+  .afo-notice-bar__play--infinite {
+    animation: afo-notice-bar-play-infinite linear infinite both;
+  }
+.afo-notice-bar--withicon
+  position: relative
+  padding-right: 30px
+
+@keyframes afo-notice-bar-play
+  to { transform: translate3d(-100%, 0, 0); }
+
+@keyframes afo-notice-bar-play-infinite
+  to { transform: translate3d(-100%, 0, 0); }
