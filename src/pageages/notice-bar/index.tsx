@@ -70,10 +70,9 @@ export default class NoticeBar extends React.Component<NoticeBarProps, any> {
     if (!wrapRef || !contentRef) {
       return
     }
-    const wrapWidth = wrapRef.getBoundingClientRect().width;
-    const offsetWidth = contentRef.getBoundingClientRect().width;
+    const wrapWidth = wrapRef.offsetwidth;
+    const offsetWidth = contentRef.offsetwidth;
     const duration = offsetWidth / 50;
-    window.console.log(wrapWidth, offsetWidth, 'width')
     if (this.props.scrollable && offsetWidth > wrapWidth) {
       this.setState({
         wrapWidth,

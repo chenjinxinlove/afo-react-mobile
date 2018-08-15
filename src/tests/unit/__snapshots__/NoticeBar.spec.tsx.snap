@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoticeBar test snapshots 1`] = `
+<div>
+  <div
+    className="afo-notice-bar"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#fff7cc",
+        "color": "#f60",
+      }
+    }
+  >
+    <div
+      className="afo-notice-left-icon"
+    >
+      <img
+        src="http://img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png"
+      />
+    </div>
+    <div
+      className="afo-notice-bar__wrap"
+    >
+      <div
+        className="afo-notice-bar__content "
+        onAnimationEnd={[Function]}
+        style={
+          Object {
+            "animationDelay": "1s",
+            "animationDuration": "0s",
+            "paddingLeft": 0,
+          }
+        }
+      >
+        最近做的项目是从0开始采用Vue作为数据驱动框架。所以有很多Vue实战上的经验体会，下面就专门拿几个常用的但难度不高的VUe功能说一下
+      </div>
+    </div>
+    
+  </div>
+  <div
+    className="afo-notice-bar"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#fff7cc",
+        "color": "#f60",
+      }
+    }
+  >
+    
+    <div
+      className="afo-notice-bar__wrap"
+    >
+      <div
+        className="afo-notice-bar__content "
+        onAnimationEnd={[Function]}
+        style={
+          Object {
+            "animationDelay": "1s",
+            "animationDuration": "0s",
+            "paddingLeft": 0,
+          }
+        }
+      >
+        最近做的项目是从0开始采用Vue作为数据驱动框架。所以有很多Vue实战上的经验体会，下面就专门拿几个常用的但难度不高的VUe功能说
+      </div>
+    </div>
+    
+  </div>
+  <div
+    className="afo-notice-bar afo-notice-bar--withicon"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#fff7cc",
+        "color": "#f60",
+      }
+    }
+  >
+    
+    <div
+      className="afo-notice-bar__wrap"
+    >
+      <div
+        className="afo-notice-bar__content "
+        onAnimationEnd={[Function]}
+        style={
+          Object {
+            "animationDelay": "1s",
+            "animationDuration": "0s",
+            "paddingLeft": 0,
+          }
+        }
+      >
+        最近做的项目是从0开始采用Vue作为数据驱动框架。所以有很多Vue实战上的经验体会，下面就专门拿几个常用的但难度不高的VUe功能说
+      </div>
+    </div>
+    <i
+      className="afo-notice-right-icon afo-icon afo-icon-close"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "14px",
+        }
+      }
+    />
+  </div>
+  <div
+    className="afo-notice-bar afo-notice-bar--withicon"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#fff7cc",
+        "color": "#f60",
+      }
+    }
+  >
+    
+    <div
+      className="afo-notice-bar__wrap"
+    >
+      <div
+        className="afo-notice-bar__content "
+        onAnimationEnd={[Function]}
+        style={
+          Object {
+            "animationDelay": "1s",
+            "animationDuration": "0s",
+            "paddingLeft": 0,
+          }
+        }
+      >
+        最近做的项目是从0开始采用Vue作为数据驱动框架。所以有很多Vue实战上的经验体会，下面就专门拿几个常用的但难度不高的VUe功能说
+      </div>
+    </div>
+    <i
+      className="afo-notice-right-icon afo-icon afo-icon-arrow"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": undefined,
+          "fontSize": "14px",
+        }
+      }
+    />
+  </div>
+</div>
+`;
