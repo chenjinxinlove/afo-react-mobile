@@ -6,7 +6,7 @@ import CardDemo from './pageages/card/demo/index';
 import IconDemo from './pageages/icon/demo/index';
 import LoadingDemo from './pageages/loading/demo//index';
 import NavbarDemo from './pageages/navbar/demo//index';
-// import NoticeBarDeom from './pageages/notice-bar/demo/index';
+import NoticeBarDeom from './pageages/notice-bar/demo/index';
 import TagDemo from './pageages/tag/demo/index';
 
 class App extends React.Component {
@@ -25,7 +25,7 @@ class App extends React.Component {
                 <Route path="/navbar" component={NavbarDemo} />
                 <Route path="/tag" component={TagDemo} />
                 <Route path="/card" component={CardDemo} />
-                {/* <Route path="/notice-bar" component={NoticeBarDeom} /> */}
+                <Route path="/notice-bar" component={NoticeBarDeom} />
               </main>
         </div>
       </BrowserRouter>

@@ -1,6 +1,7 @@
 import classnames from 'classnames';
 import * as React from 'react';
 import { MouseEventHandler } from 'react';
+// import * as ReactDOM from 'react-dom';
 import Icon from '../icon/index';
 import './style/noticeBar.styl';
 
@@ -13,10 +14,26 @@ export interface NoticeBarProps {
   delay?: number;
   scrollable?: boolean;
   className?: string;
+  style?: React.CSSProperties;
   onClick?: MouseEventHandler<HTMLAnchorElement>;
 }
 
 export default class NoticeBar extends React.Component<NoticeBarProps, any> {
+  wrapRef: any;
+  contentRef: any;  
+  constructor(props: NoticeBarProps) {
+    super(props);
+    this.wrapRef = React.createRef();
+    this.contentRef = React.createRef();
+    this.state = {
+      wrapWidth: 0,
+      firstRound: true,
+      duration: 0,
+      offsetWidth: 0,
+      showNoticeBar: true,
+      animationClass: ''
+    };
+  }
   static defaultProps = {
     mode: '',
     leftIcon: '',
@@ -27,25 +44,47 @@ export default class NoticeBar extends React.Component<NoticeBarProps, any> {
     scrollable: true,
     onClick() {}
   };
-  constructor(props: NoticeBarProps) {
-    super(props);
-    this.state = {
-      showNoticeBar: true,
-      animationClass: ''
-    };
+  onAnimationEnd = () => {
+    this.setState({
+      firstRound: false
+    })
+    setTimeout(() => {
+      this.setState({
+        duration: (this.state.offsetWidth + this.state.wrapWidth) / 50,
+        animationClass: 'afo-notice-bar__play--infinite'
+      })
+    })
   }
   onClickIcon = () => {
-    const { mode, onClick } = this.props;
-    if (onClick) {
-      onClick();
-    }
-    if (mode === 'closable') {
+    const { mode } = this.props;
+    if (mode === 'closeable') {
       this.setState({
         showNoticeBar: false,
       });
     }
   }
+  componentDidMount () {
+    const wrapRef: any = this.wrapRef;
+    const contentRef: any = this.contentRef;
+    // const {fps} = this.props;
+    if (!wrapRef || !contentRef) {
+      return
+    }
+    const wrapWidth = wrapRef.getBoundingClientRect().width;
+    const offsetWidth = contentRef.getBoundingClientRect().width;
+    const duration = offsetWidth / 50;
+    window.console.log(wrapWidth, offsetWidth, 'width')
+    if (this.props.scrollable && offsetWidth > wrapWidth) {
+      this.setState({
+        wrapWidth,
+        offsetWidth,
+        duration,
+        animationClass:'afo-notice-bar__play'
+      })
+    }
+  }
   render () {
+    const extraProps: any = {};
     const {
       children,
       className,
@@ -57,8 +96,10 @@ export default class NoticeBar extends React.Component<NoticeBarProps, any> {
       delay,
       scrollable,
       onClick,
+      style,
       ...resProps
     } = this.props;
+    extraProps.onClick = onClick;
     const {
       firstRound,
       wrapWidth,
@@ -76,15 +117,17 @@ export default class NoticeBar extends React.Component<NoticeBarProps, any> {
     })
     const iconName = mode === 'closeable' ? 'close' : mode === 'link' ? 'arrow' : '';
     return showNoticeBar ?  (
-      <div className={noticeBarCls} style={{color, background}} onClick={onClick}>
+      <div className={noticeBarCls} style={{color, background, ...style}} {...resProps} {...extraProps}>
         {
           leftIcon ? <div className="afo-notice-left-icon"><img src={leftIcon} /></div> : ''
         }
-        <div className="afo-notice-bar__wrap" ref='wrap'>
-          <div className={noticeContentCls} ref='content' style={{
+        <div className="afo-notice-bar__wrap" ref={el => (this.wrapRef = el)}>
+          <div className={noticeContentCls} ref={el => (this.contentRef = el)} style={{
             paddingLeft: firstRound ? 0 : wrapWidth + 'px',
             animationDelay: (firstRound ? delay : 0) + 's',
-            animationDuration: duration + 's'}}>
+            animationDuration: duration + 's'}}
+            onAnimationEnd={this.onAnimationEnd}
+            >
               {children}
           </div>
         </div>

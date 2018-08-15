@@ -6,7 +6,8 @@
       "node_modules/**/*.ts",
       "bin/*.js",
       "scripts/*.js",
-      "tests/**/*.js"
+      "tests/**/*.js",
+      "coverage/**/*.js"
     ]
   },
   "rules": {
@@ -15,6 +16,8 @@
     "interface-name": false,
     "object-literal-sort-keys": false,
     "allowSyntheticDefaultImports": true,
-    "jsx-no-string-refs": false
+    "jsx-no-string-refs": false,
+    "no-empty": false,
+    "no-unused-expression": false
   }
 }

@@ -25,7 +25,7 @@ export default class Card extends React.Component< CardProps, any > {
       ...resProps
     } = this.props;
     return (
-      <div className="afo-card">
+      <div className="afo-card" {...resProps}>
         <div className="afo-card-header afo-card--cell" >
           {
             headerContent ?  headerContent : <div className="afo-card--title"><span>{title}</span><div className="afo-card--label">{desc}</div></div>
