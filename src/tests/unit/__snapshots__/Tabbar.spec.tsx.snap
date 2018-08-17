@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabBar test snapshots 1`] = `
+<div>
+  <div
+    className="afo-tabbar afo-tabbar--fixed"
+    style={
+      Object {
+        "background": "white",
+        "zIndex": 1,
+      }
+    }
+  >
+    <div
+      className="afo-tabbar-item afo-tabbar-item--active"
+      onClick={[Function]}
+    >
+      <div
+        className="afo-tabbar-item__icon"
+      >
+        <img
+          alt=""
+          src="https://img.yzcdn.cn/public_files/2017/10/13/793c77793db8641c4c325b7f25bf130d.png"
+        />
+        
+      </div>
+      首页
+    </div>
+    <div
+      className="afo-tabbar-item"
+      onClick={[Function]}
+    >
+      <div
+        className="afo-tabbar-item__icon"
+      >
+        <i
+          className="afo-icon afo-icon-mall"
+          onClick={undefined}
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": "21px",
+            }
+          }
+        />
+        
+      </div>
+      国务
+    </div>
+    <div
+      className="afo-tabbar-item"
+      onClick={[Function]}
+    >
+      <div
+        className="afo-tabbar-item__icon icon--dot"
+      >
+        <i
+          className="afo-icon afo-icon-credit-card"
+          onClick={undefined}
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": "21px",
+            }
+          }
+        />
+        
+      </div>
+      订单
+    </div>
+    <div
+      className="afo-tabbar-item"
+      onClick={[Function]}
+    >
+      <div
+        className="afo-tabbar-item__icon"
+      >
+        <i
+          className="afo-icon afo-icon-person"
+          onClick={undefined}
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": "21px",
+            }
+          }
+        />
+        <div
+          className="icon__info"
+        >
+          12
+        </div>
+      </div>
+      个人中心
+    </div>
+  </div>
+</div>
+`;

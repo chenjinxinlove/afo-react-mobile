@@ -33,7 +33,6 @@ export {
   get,
   isObj,
   isDef,
-  isServer,
   camelize,
   isAndroid
 }
