@@ -18,6 +18,7 @@
     "allowSyntheticDefaultImports": true,
     "jsx-no-string-refs": false,
     "no-empty": false,
-    "no-unused-expression": false
+    "no-unused-expression": false,
+    "max-classes-per-file": [2] // 每个文件中可定义类的个数
   }
 }
