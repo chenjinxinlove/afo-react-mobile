@@ -54,7 +54,7 @@ class Button extends React.Component<ButtonProps, any> {
     });
     return (
         <button
-          onClick={disabled || loading ? undefined : () => onClick()}
+          // onClick={disabled || loading ? undefined : (e) => onClick(e)}
           type={effect}
           {...restProps}
           disabled={disabled}
