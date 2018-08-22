@@ -15,7 +15,7 @@ class TabDeom extends React.Component<any> {
     return (
       <div>
       <p>默认显示</p>
-        {/* <Tab active={0}>
+        <Tab active={0}>
           <Tab.Item title='选项1' >
             内容1
           </Tab.Item >
@@ -59,7 +59,7 @@ class TabDeom extends React.Component<any> {
           <Tab.Item title='选项4'>
             内容4
           </Tab.Item >
-        </Tab> */}
+        </Tab>
         <div style={{height: "50px"}} />
         <p>横向滑动</p>
         <Tab active={0}>

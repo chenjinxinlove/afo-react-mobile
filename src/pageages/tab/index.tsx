@@ -2,7 +2,6 @@ import classnames from 'classnames';
 import * as React from 'react';
 import * as Eventon from '../../common/utils/event';
 import * as Raf from '../../common/utils/raf';
-import scrollUtils from '../../common/utils/scroll';
 import './style/tab.styl';
 export interface TabItemProps {
   style?: React.CSSProperties;

@@ -1,0 +1,317 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test snapshots 1`] = `
+<div>
+  <p>
+    默认显示
+  </p>
+  <div
+    className="afo-tabs afo-tabs--line"
+    style={undefined}
+  >
+    <div
+      className="afo-hairline--top-bottom afo-tabs__wrap afo-tabs__wrap--position"
+    >
+      <div
+        className="afo-tabs__nav afo-tabs__nav--line"
+      >
+        <div
+          className="afo-tabs__line"
+          style={Object {}}
+        />
+        <div
+          className="afo-tab afo-tab--active"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项1
+          </span>
+        </div>
+        <div
+          className="afo-tab"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项2
+          </span>
+        </div>
+        <div
+          className="afo-tab"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项3
+          </span>
+        </div>
+        <div
+          className="afo-tab"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项4
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="afo-tabs__content"
+    >
+      内容1
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "height": "50px",
+      }
+    }
+  />
+  <p>
+    显示card类型
+  </p>
+  <div
+    className="afo-tabs afo-tabs--card"
+    style={undefined}
+  >
+    <div
+      className="afo-tabs__wrap afo-tabs__wrap--position"
+    >
+      <div
+        className="afo-tabs__nav afo-tabs__nav--card"
+      >
+        
+        <div
+          className="afo-tab afo-tab--active"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项1
+          </span>
+        </div>
+        <div
+          className="afo-tab"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项2
+          </span>
+        </div>
+        <div
+          className="afo-tab"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项3
+          </span>
+        </div>
+        <div
+          className="afo-tab"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项4
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="afo-tabs__content"
+    >
+      内容1
+    </div>
+  </div>
+  <p>
+    禁用类型
+  </p>
+  <div
+    className="afo-tabs afo-tabs--line"
+    style={undefined}
+  >
+    <div
+      className="afo-hairline--top-bottom afo-tabs__wrap afo-tabs__wrap--position"
+    >
+      <div
+        className="afo-tabs__nav afo-tabs__nav--line"
+      >
+        <div
+          className="afo-tabs__line"
+          style={Object {}}
+        />
+        <div
+          className="afo-tab afo-tab--active"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项1
+          </span>
+        </div>
+        <div
+          className="afo-tab afo-tab--disabled"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项2
+          </span>
+        </div>
+        <div
+          className="afo-tab"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项3
+          </span>
+        </div>
+        <div
+          className="afo-tab"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项4
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="afo-tabs__content"
+    >
+      内容1
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "height": "50px",
+      }
+    }
+  />
+  <p>
+    横向滑动
+  </p>
+  <div
+    className="afo-tabs afo-tabs--line"
+    style={undefined}
+  >
+    <div
+      className="afo-hairline--top-bottom afo-tabs__wrap afo-tabs__wrap--scrollable afo-tabs__wrap--position"
+    >
+      <div
+        className="afo-tabs__nav afo-tabs__nav--line"
+      >
+        <div
+          className="afo-tabs__line"
+          style={Object {}}
+        />
+        <div
+          className="afo-tab afo-tab--active"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项1
+          </span>
+        </div>
+        <div
+          className="afo-tab"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项2
+          </span>
+        </div>
+        <div
+          className="afo-tab"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项3
+          </span>
+        </div>
+        <div
+          className="afo-tab"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项4
+          </span>
+        </div>
+        <div
+          className="afo-tab"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项5
+          </span>
+        </div>
+        <div
+          className="afo-tab"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项6
+          </span>
+        </div>
+        <div
+          className="afo-tab"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项7
+          </span>
+        </div>
+        <div
+          className="afo-tab"
+          onClick={[Function]}
+        >
+          <span
+            className="afo-ellipsis"
+          >
+            选项8
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="afo-tabs__content"
+    >
+      内容1
+    </div>
+  </div>
+</div>
+`;
