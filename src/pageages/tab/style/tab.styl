@@ -1,0 +1,88 @@
+@require "../../../common/stylus/variable.styl"
+@require "../../../common/stylus/mixin.styl"
+.afo-hairline--top-bottom
+  border-top-bottom-1px($btn-default-border)
+.afo-tabs
+  position: relative
+  &__wrap
+    top: 0
+    left: 0
+    right: 0
+    z-index: 99
+    overflow: hidden
+    position: absolute
+    &--page-top
+      position: fixed
+    &--content-bottom
+      top: auto
+      bottom: 0
+    &--scrollable
+      .afo-tab
+        flex: 0 0 22%
+      .afo-tabs__nav
+        overflow: hidden
+        overflow-x: auto
+        &::-webkit-scrollbar
+          display: none
+  &__nav
+    display: flex
+    user-select: none
+    position: relative
+    background-color: $fill-base
+    &--line
+      height: 100%
+      padding-bottom: 15px
+      box-sizing: content-box
+    &--card
+      margin: 0 15px
+      border-radius: 2px
+      box-sizing: border-box
+      border: 1px solid $brand-important
+      height: $afo-tabs-card-height
+      .afo-tab
+        color: $brand-important
+        border-right: 1px solid $brand-important
+        line-height: 28px
+        &:last-child
+          border-right: none
+        &.afo-tab--active
+          color: $fill-base
+          background-color: $brand-important
+  &__line
+    z-index: 1
+    left: 0
+    bottom: 15px
+    height: 2px
+    position: absolute
+    background-color: $brand-important
+  &--line
+    padding-top: $afo-tabs-line-height
+    .afo-tabs__wrap
+      height: $afo-tabs-line-height
+  &--card
+    padding-top: $afo-tabs-card-height
+    .afo-tabs__wrap
+      height: $afo-tabs-card-height
+.afo-tab
+  flex: 1
+  cursor: pointer
+  padding: 0 5px
+  font-size: 14px
+  position: relative
+  color: $text-color
+  line-height: $afo-tabs-line-height
+  text-align: center
+  box-sizing: border-box
+  background-color: $fill-base
+  min-width: 0
+  -webkit-tap-highlight-color: transparent
+  span
+    display: block
+  &:active
+    background-color: $active-color
+  &--active
+    color: $brand-important
+  &--disabled
+    color: $brand-default
+    &:active
+      background-color: $fill-base

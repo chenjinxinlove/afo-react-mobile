@@ -1,4 +1,8 @@
 
+function isServer () {
+  return location ? false : true
+}
+
 function isDef (value) {
   return value !== undefined && value !== null
 }
@@ -34,5 +38,6 @@ export {
   isObj,
   isDef,
   camelize,
-  isAndroid
+  isAndroid,
+  isServer
 }
