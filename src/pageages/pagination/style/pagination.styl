@@ -1,0 +1,48 @@
+@require "../../../common/stylus/variable.styl"
+@require "../../../common/stylus/mixin.styl"
+.afo-hairline
+  border-1px($btn-default-border)
+.afo-pagination
+  display: flex
+  text-align: center
+  line-height: 40px
+  font-size: 14px
+  &__item
+    flex: 1
+    height: 40px
+    min-width: 36px
+    color: $brand-primary
+    background-color: $fill-base
+    box-sizing: border-box
+    user-select: none
+    border-1px($btn-default-border)
+    &:active
+      background-color: $brand-primary
+      color: $fill-base
+      opacity: 0.8
+    &::after
+      border-width: 1px 0 1px 1px
+    &:last-child::after
+      border-right-width: 1px
+    &--disabled,
+    &--disabled:active
+      background-color: $fill-base
+      color: $color-text-disabled
+      opacity: 0.6
+    &--active
+      color: $fill-base
+      background-color: $brand-primary
+  &__prev,
+  &__next
+    padding: 0 5px
+  &__page
+    flex-grow: 0
+  &__page-desc
+    flex: 1
+    height: 40px
+    color: $color-text-disabled
+  &--simple
+    .van-pagination__prev,
+    .van-pagination__next
+      &::after
+        border-width: 1px
