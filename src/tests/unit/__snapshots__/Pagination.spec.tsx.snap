@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test snapshots 1`] = `
+<div>
+  <p>
+    基础用法
+  </p>
+  <ul
+    className="afo-pagination"
+    style={undefined}
+  >
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__item--disabled afo-pagination__prev"
+      onClick={[Function]}
+    >
+      上一页
+    </li>
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__page afo-pagination__item--active"
+      onClick={[Function]}
+    >
+      1
+    </li>
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__page"
+      onClick={[Function]}
+    >
+      2
+    </li>
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__page"
+      onClick={[Function]}
+    >
+      3
+    </li>
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__page"
+      onClick={[Function]}
+    >
+      4
+    </li>
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__page"
+      onClick={[Function]}
+    >
+      5
+    </li>
+    
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__next"
+      onClick={[Function]}
+    >
+      下一页
+    </li>
+  </ul>
+  <div
+    style={
+      Object {
+        "height": "50px",
+      }
+    }
+  />
+  <p>
+    简单模式
+  </p>
+  <ul
+    className="afo-pagination afo-pagination--simple"
+    style={undefined}
+  >
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__item--disabled afo-pagination__prev"
+      onClick={[Function]}
+    >
+      上一页
+    </li>
+    
+    <li
+      className="afo-pagination__page-desc"
+    >
+      1/12
+    </li>
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__next"
+      onClick={[Function]}
+    >
+      下一页
+    </li>
+  </ul>
+  <div
+    style={
+      Object {
+        "height": "50px",
+      }
+    }
+  />
+  <p>
+    显示省略号
+  </p>
+  <ul
+    className="afo-pagination"
+    style={undefined}
+  >
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__item--disabled afo-pagination__prev"
+      onClick={[Function]}
+    >
+      上一页
+    </li>
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__page afo-pagination__item--active"
+      onClick={[Function]}
+    >
+      1
+    </li>
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__page"
+      onClick={[Function]}
+    >
+      2
+    </li>
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__page"
+      onClick={[Function]}
+    >
+      3
+    </li>
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__page"
+      onClick={[Function]}
+    >
+      4
+    </li>
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__page"
+      onClick={[Function]}
+    >
+      5
+    </li>
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__page"
+      onClick={[Function]}
+    >
+      ...
+    </li>
+    
+    <li
+      className="afo-hairline afo-pagination__item afo-pagination__next"
+      onClick={[Function]}
+    >
+      下一页
+    </li>
+  </ul>
+</div>
+`;
