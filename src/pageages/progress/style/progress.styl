@@ -1,0 +1,28 @@
+@require "../../../common/stylus/variable.styl"
+.afo-progress
+  height: 4px
+  position: relative
+  border-radius: 4px
+  background: $fill-tap
+  &__portion
+    left: 0
+    height: 100%
+    position: absolute
+    border-radius: inherit
+    &--with-pivot
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0
+  &__pivot
+    top: 50%
+    right: 0
+    min-width: 2em
+    padding: 0 5px
+    font-size: 10px
+    position: absolute
+    line-height: 1.6
+    text-align: center
+    border-radius: 1em
+    word-break: keep-all
+    box-sizing: border-box
+    background-color: $fill-tap
+    transform: translate(100%, -50%)

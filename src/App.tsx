@@ -8,6 +8,7 @@ import LoadingDemo from './pageages/loading/demo//index';
 import NavbarDemo from './pageages/navbar/demo//index';
 import NoticeBarDeom from './pageages/notice-bar/demo/index';
 import PaginationDeom from './pageages/pagination/demo/index';
+import ProgressDeom from './pageages/progress/demo/index';
 import RadeDemo from './pageages/rate/demo/index';
 import TabDemo from './pageages/tab/demo/index';
 import TabBarDeom from './pageages/tabbar/demo/index';
@@ -35,6 +36,7 @@ class App extends React.Component {
                 <Route path="/card" component={RadeDemo} />
                 <Route path="/tab" component={TabDemo} />
                 <Route path="/pagination" component={PaginationDeom} />
+                <Route path="/progress" component={ProgressDeom} />
               </main>
         </div>
       </BrowserRouter>

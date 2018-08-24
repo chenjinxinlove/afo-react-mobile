@@ -16,7 +16,7 @@ class PaginationDeom extends React.Component<any> {
         <div style={{height: "50px"}} />
         <p>显示省略号</p>
         <Pagination value={1} total={125} show-page={5} ellipses={true}/>
-      </div>   
+      </div>
     );
   }
 }
