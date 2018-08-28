@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test snapshots 1`] = `
+<div>
+  <p>
+    基本用法
+  </p>
+  <div
+    className="afo-slider"
+    onClick={[Function]}
+    style={undefined}
+  >
+    <div
+      className="afo-slider__bar"
+      style={
+        Object {
+          "height": "2px",
+          "width": "50%",
+        }
+      }
+    >
+      <span
+        className="afo-slider__button"
+        onTouchCancel={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+      />
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "height": "50px",
+      }
+    }
+  />
+  <p>
+    指定选择范围
+  </p>
+  <div
+    className="afo-slider"
+    onClick={[Function]}
+    style={undefined}
+  >
+    <div
+      className="afo-slider__bar"
+      style={
+        Object {
+          "height": "2px",
+          "width": "50%",
+        }
+      }
+    >
+      <span
+        className="afo-slider__button"
+        onTouchCancel={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+      />
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "height": "50px",
+      }
+    }
+  />
+  <p>
+    禁操作
+  </p>
+  <div
+    className="afo-slider afo-slider--disabled"
+    onClick={[Function]}
+    style={undefined}
+  >
+    <div
+      className="afo-slider__bar"
+      style={
+        Object {
+          "height": "2px",
+          "width": "50%",
+        }
+      }
+    >
+      <span
+        className="afo-slider__button"
+        onTouchCancel={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+      />
+    </div>
+  </div>
+  <p>
+    指定步长
+  </p>
+  <div
+    style={
+      Object {
+        "height": "50px",
+      }
+    }
+  />
+  <div
+    className="afo-slider"
+    onClick={[Function]}
+    style={undefined}
+  >
+    <div
+      className="afo-slider__bar"
+      style={
+        Object {
+          "height": "2px",
+          "width": "50%",
+        }
+      }
+    >
+      <span
+        className="afo-slider__button"
+        onTouchCancel={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+      />
+    </div>
+  </div>
+</div>
+`;
