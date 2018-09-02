@@ -1,6 +1,7 @@
 import classnames from 'classnames'
 import * as React from 'react';
 import * as Raf from '../../common/utils/raf';
+import { CollapseItem } from './index';
 
 
 interface StringArray {
@@ -182,7 +183,7 @@ class Collapse extends React.Component<CollapseProps, any> {
         {
           items.map((item, index) => {
             return (
-
+              <CollapseItem />
             )
           })
         }
