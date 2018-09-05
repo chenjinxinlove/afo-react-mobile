@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test snapshots 1`] = `
+<div>
+  <p>
+    基本用法
+  </p>
+  <div
+    className="afo-steps afo-steps--horizontal"
+  >
+    
+    <div
+      className="afo-steps__items afo-steps__items--alone"
+    >
+      <div
+        className="afo-step afo-step--horizontal afo-step--finish"
+      >
+        <div
+          className="afo-step__title"
+          style={Object {}}
+        >
+          买家下单
+        </div>
+        <div
+          className="afo-step__circle-container"
+        >
+          <i
+            className="afo-step__circle"
+          />
+        </div>
+        <div
+          className="afo-step__line"
+        />
+      </div>
+      <div
+        className="afo-step afo-step--horizontal afo-step--process"
+      >
+        <div
+          className="afo-step__title"
+          style={
+            Object {
+              "color": "#06bf04",
+            }
+          }
+        >
+          商家接单
+        </div>
+        <div
+          className="afo-step__circle-container"
+        >
+          <i
+            className="afo-icon afo-icon-right"
+            onClick={undefined}
+            style={
+              Object {
+                "color": undefined,
+                "fontSize": "12px",
+              }
+            }
+          />
+        </div>
+        <div
+          className="afo-step__line"
+        />
+      </div>
+      <div
+        className="afo-step afo-step--horizontal afo-step--"
+      >
+        <div
+          className="afo-step__title"
+          style={Object {}}
+        >
+          买家提货
+        </div>
+        <div
+          className="afo-step__circle-container"
+        >
+          <i
+            className="afo-step__circle"
+          />
+        </div>
+        <div
+          className="afo-step__line"
+        />
+      </div>
+      <div
+        className="afo-step afo-step--horizontal afo-step--"
+      >
+        <div
+          className="afo-step__title"
+          style={Object {}}
+        >
+          交易完成
+        </div>
+        <div
+          className="afo-step__circle-container"
+        >
+          <i
+            className="afo-step__circle"
+          />
+        </div>
+        <div
+          className="afo-step__line"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "height": "50px",
+      }
+    }
+  />
+  <div
+    onClick={[Function]}
+  >
+    下一步
+  </div>
+  <p>
+    竖着
+  </p>
+  <div
+    style={
+      Object {
+        "height": "50px",
+      }
+    }
+  />
+  <div
+    className="afo-steps afo-steps--vertical"
+  >
+    
+    <div
+      className="afo-steps__items afo-steps__items--alone"
+    >
+      <div
+        className="afo-step afo-hairline afo-step--vertical afo-step--finish"
+      >
+        <div
+          className="afo-step__title"
+          style={Object {}}
+        >
+          <h3>
+            买家下单
+          </h3>
+          <p>
+            2016-07-12 12:40
+          </p>
+        </div>
+        <div
+          className="afo-step__circle-container"
+        >
+          <i
+            className="afo-step__circle"
+          />
+        </div>
+        <div
+          className="afo-step__line"
+        />
+      </div>
+      <div
+        className="afo-step afo-hairline afo-step--vertical afo-step--process"
+      >
+        <div
+          className="afo-step__title"
+          style={
+            Object {
+              "color": "#06bf04",
+            }
+          }
+        >
+          <h3>
+            商家接单
+          </h3>
+          <p>
+            2016-07-11 10:00
+          </p>
+        </div>
+        <div
+          className="afo-step__circle-container"
+        >
+          <i
+            className="afo-icon afo-icon-right"
+            onClick={undefined}
+            style={
+              Object {
+                "color": undefined,
+                "fontSize": "12px",
+              }
+            }
+          />
+        </div>
+        <div
+          className="afo-step__line"
+        />
+      </div>
+      <div
+        className="afo-step afo-hairline afo-step--vertical afo-step--"
+      >
+        <div
+          className="afo-step__title"
+          style={Object {}}
+        >
+          <h3>
+            买家提货
+          </h3>
+          <p>
+            2016-07-10 09:30
+          </p>
+        </div>
+        <div
+          className="afo-step__circle-container"
+        >
+          <i
+            className="afo-step__circle"
+          />
+        </div>
+        <div
+          className="afo-step__line"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

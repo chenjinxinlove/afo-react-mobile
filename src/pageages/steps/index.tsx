@@ -1,6 +1,7 @@
 import classnames from 'classnames';
 import * as React from 'react';
 import Icon from '../../pageages/icon/index';
+import './style/steps.styl';
 
 export interface StepsProps {
   icon?: string;
@@ -18,28 +19,24 @@ export interface StepItemProps {
   activeColor: string;
   index: number;
   active: number;
+  key: number;
 }
 
 class StepItem extends React.Component<StepItemProps, any> {
-  componentWillMount () {
-    let status =''
-    const index = this.props.index
-    const active = this.props.active
-    if (index < active) {
-      status = 'finish'
-    } else if (index === active) {
-      status ='process'
-    }
-    this.setState({
-      status
-    })
-  }
   render () {
     const {
       direction,
       activeColor,
+      index,
+      active,
       children
     } = this.props;
+    let status = ''
+    if (index < active) {
+      status = 'finish'
+    } else if (index === active) {
+      status = 'process'
+    }
     const itemCls = classnames('afo-step', {
       'afo-hairline': direction === 'vertical',
       [`afo-step--${direction}`]: true,
@@ -76,7 +73,7 @@ export class Item extends React.Component<ItemProps, any> {
   }
 }
 class Steps extends React.Component<StepsProps, any> {
-  defaultProps = {
+  static defaultProps = {
     direction: 'horizontal',
     activeColor: '#06bf04'
   }
@@ -89,7 +86,6 @@ class Steps extends React.Component<StepsProps, any> {
     const items = this.getChildes();
     this.setState({
       items,
-      active: this.props.active
     })
   }
   getChildes = () => {
@@ -107,6 +103,7 @@ class Steps extends React.Component<StepsProps, any> {
       activeColor,
       className
     } = this.props;
+    const active =  this.props.active;
     const stepsCls = classnames('afo-steps', className, {
       [`afo-steps--${direction}`]: true
     })
@@ -129,19 +126,17 @@ class Steps extends React.Component<StepsProps, any> {
           {
             this.state.items.map((item: any, index: number) => {
               return (
-                <div key={index}>
-                  <StepItem
-                    direction = {direction || 'horizontal'}
-                    activeColor = {activeColor || '#06bf04'}
-                    index = {index}
-                    active = {this.state.active}
-                  >
-                    {
-                      item.children
-                    }
-                  </StepItem>
-                </div>
-                
+                <StepItem
+                  key={index}
+                  direction = {direction || 'horizontal'}
+                  activeColor = {activeColor || '#06bf04'}
+                  index = {index}
+                  active = {active}
+                >
+                  {
+                    item.children
+                  }
+                </StepItem>
               )
             })
           }

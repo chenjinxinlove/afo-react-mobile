@@ -16,7 +16,7 @@ export default class Icon extends React.Component<IconProps, any> {
     size: '32px'
   }
   render() {
-    const { className, size, color, type, onClick, ...resProps} = this.props;
+    const { className, size, color, type, onClick, style, ...resProps} = this.props;
     const cls = classnames(
       className,
       'afo-icon',
