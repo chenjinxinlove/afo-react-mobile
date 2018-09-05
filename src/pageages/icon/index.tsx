@@ -7,7 +7,8 @@ export interface IconProps{
   color?: string;
   type?: string;
   className? : string;
-  onClick?: MouseEventHandler<HTMLAnchorElement>
+  style?: React.CSSProperties;
+  onClick?: MouseEventHandler<HTMLAnchorElement>;
 }
 
 export default class Icon extends React.Component<IconProps, any> {
@@ -22,7 +23,7 @@ export default class Icon extends React.Component<IconProps, any> {
       `afo-icon-${type}`,
     );
     return (
-      <i className={cls} {...resProps} style={{color, fontSize: size}} onClick={onClick} />
+      <i className={cls} {...resProps} style={{...style, color, fontSize: size}} onClick={onClick} />
     )
   }
 }

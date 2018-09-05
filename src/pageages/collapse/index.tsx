@@ -1,15 +1,11 @@
 import classnames from 'classnames'
 import * as React from 'react';
 import * as Raf from '../../common/utils/raf';
-import { CollapseItem } from './index';
 
-
-interface StringArray {
-  [index: number]: string;
-}
 export interface CollapseProps {
   accordion?: boolean;
-  value: string | number | StringArray;
+  value: [];
+  onChange?: (name: any) => void;
 }
 
 export interface ItemProps {
@@ -34,9 +30,9 @@ export interface  CollapseItemProps {
   title?: string;
   switch: (name: any, expanded: any) => void;
   index: number;
-  accordion: boolean;
-  expanded: string | number | StringArray;
   value: any;
+  accordion: boolean;
+  expanded: any;
   style?: React.CSSProperties;
   children?: any;
 }
@@ -163,7 +159,7 @@ class Collapse extends React.Component<CollapseProps, any> {
   }
   switch (name: any, expanded: any) {
     if (!this.props.accordion) {
-      const value = this.props.value
+      const value = this.props.value || []
       name = expanded
         ? value.concat(name)
         : value.filter(activeName => activeName !== name)
@@ -181,9 +177,16 @@ class Collapse extends React.Component<CollapseProps, any> {
     return (
       <div className="afo-collapse afo-hairline--top-bottom">
         {
-          items.map((item, index) => {
+          items.map((item:any, index:number) => {
             return (
-              <CollapseItem />
+              <CollapseItem
+                key={index}
+                value={index}
+                switch={this.switch}
+                index={index}
+                accordion={this.props.accordion || false}
+                expanded={this.state.value}
+              >{item.children}</CollapseItem>
             )
           })
         }
@@ -191,3 +194,5 @@ class Collapse extends React.Component<CollapseProps, any> {
     )
   }
 }
+
+export default Collapse;
