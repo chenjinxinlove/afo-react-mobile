@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test snapshots 1`] = `
+<div>
+  <p>
+    基本用法
+  </p>
+  <div
+    className="afo-collapse afo-hairline--top-bottom"
+  >
+    <div
+      className="afo-collapse-item afo-collapse-item--expanded"
+    >
+      <div
+        className="afo-cell afo-cell--clickable afo-hairlines afo-collapse-item__title"
+        onClick={[Function]}
+      >
+        <div
+          className="afo-cell__title"
+        >
+          <span>
+            1
+          </span>
+        </div>
+        <i
+          className="afo-icon afo-icon-arrow afo-cell__right-icon"
+        />
+      </div>
+      <div
+        className="afo-collapse-item__wrapper"
+        onTransitionEnd={[Function]}
+      >
+        <div
+          className="afo-collapse-item__content"
+        >
+          111111111
+        </div>
+      </div>
+    </div>
+    <div
+      className="afo-collapse-item afo-hairline--top"
+    >
+      <div
+        className="afo-cell afo-cell--clickable afo-hairlines afo-collapse-item__title"
+        onClick={[Function]}
+      >
+        <div
+          className="afo-cell__title"
+        >
+          <span>
+            2
+          </span>
+        </div>
+        <i
+          className="afo-icon afo-icon-arrow afo-cell__right-icon"
+        />
+      </div>
+      
+    </div>
+    <div
+      className="afo-collapse-item afo-hairline--top"
+    >
+      <div
+        className="afo-cell afo-cell--clickable afo-hairlines afo-collapse-item__title"
+        onClick={[Function]}
+      >
+        <div
+          className="afo-cell__title"
+        >
+          <span>
+            3
+          </span>
+        </div>
+        <i
+          className="afo-icon afo-icon-arrow afo-cell__right-icon"
+        />
+      </div>
+      
+    </div>
+  </div>
+  <p>
+    手风琴
+  </p>
+  <div
+    className="afo-collapse afo-hairline--top-bottom"
+  >
+    <div
+      className="afo-collapse-item"
+    >
+      <div
+        className="afo-cell afo-cell--clickable afo-hairlines afo-collapse-item__title"
+        onClick={[Function]}
+      >
+        <div
+          className="afo-cell__title"
+        >
+          <span>
+            1
+          </span>
+        </div>
+        <i
+          className="afo-icon afo-icon-arrow afo-cell__right-icon"
+        />
+      </div>
+      
+    </div>
+    <div
+      className="afo-collapse-item afo-hairline--top"
+    >
+      <div
+        className="afo-cell afo-cell--clickable afo-hairlines afo-collapse-item__title"
+        onClick={[Function]}
+      >
+        <div
+          className="afo-cell__title"
+        >
+          <span>
+            2
+          </span>
+        </div>
+        <i
+          className="afo-icon afo-icon-arrow afo-cell__right-icon"
+        />
+      </div>
+      
+    </div>
+    <div
+      className="afo-collapse-item afo-hairline--top"
+    >
+      <div
+        className="afo-cell afo-cell--clickable afo-hairlines afo-collapse-item__title"
+        onClick={[Function]}
+      >
+        <div
+          className="afo-cell__title"
+        >
+          <span>
+            3
+          </span>
+        </div>
+        <i
+          className="afo-icon afo-icon-arrow afo-cell__right-icon"
+        />
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
