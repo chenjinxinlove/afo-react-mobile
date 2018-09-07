@@ -4,7 +4,7 @@ import * as Raf from '../../common/utils/raf';
 
 export interface CollapseProps {
   accordion?: boolean;
-  value: [];
+  value: [string];
   onChange?: (name: any) => void;
 }
 

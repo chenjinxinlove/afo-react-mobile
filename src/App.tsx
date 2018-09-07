@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import BadgeDemo from './pageages/badge/demo/index';
 import ButtonDemo from './pageages/button/demo/index';
 import CardDemo from './pageages/card/demo/index';
+import CollapseDeom from './pageages/collapse/demo/index';
 import IconDemo from './pageages/icon/demo/index';
 import LoadingDemo from './pageages/loading/demo//index';
 import NavbarDemo from './pageages/navbar/demo//index';
@@ -15,7 +16,6 @@ import StepsDeom from './pageages/steps/demo/index';
 import TabDemo from './pageages/tab/demo/index';
 import TabBarDeom from './pageages/tabbar/demo/index';
 import TagDemo from './pageages/tag/demo/index';
-
 
 
 class App extends React.Component {
@@ -42,6 +42,7 @@ class App extends React.Component {
                 <Route path="/progress" component={ProgressDeom} />
                 <Route path="/slider" component={SliderDemo} />
                 <Route path="/steps" component={StepsDeom} />
+                <Route path="/collapse" component={CollapseDeom} />
               </main>
         </div>
       </BrowserRouter>
