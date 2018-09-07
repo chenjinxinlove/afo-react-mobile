@@ -1,10 +1,11 @@
 import classnames from 'classnames'
 import * as React from 'react';
+import {isDef} from '../../common/utils/index';
 import * as Raf from '../../common/utils/raf';
-
+import './style/collapse.styl'
 export interface CollapseProps {
   accordion?: boolean;
-  value: [string];
+  value: any;
   onChange?: (name: any) => void;
 }
 
@@ -32,31 +33,50 @@ export interface  CollapseItemProps {
   index: number;
   value: any;
   accordion: boolean;
-  expanded: any;
   style?: React.CSSProperties;
   children?: any;
 }
 
-export class CollapseItem extends React.Component<CollapseItemProps, any> {
+interface CollapseItemState  {
+  show: boolean;
+  inited: boolean;
+  expanded: boolean;
+}
+export class CollapseItem extends React.Component<CollapseItemProps, CollapseItemState> {
   wrapperRef: any;
   contentRef: any;
   constructor (props: CollapseItemProps) {
     super(props)
     this.state = {
-      show: null,
-      inited: null
+      show: false,
+      inited: false,
+      expanded: false
     }
     this.wrapperRef = React.createRef()
     this.contentRef = React.createRef()
   }
   componentWillMount () {
+    const {value, name, index} = this.props;
+    const currentName = isDef(name) ? name : index
+    const expanded = this.props.accordion ? value === currentName : value.some((n:any) => n === currentName)
     this.setState({
-      show: this.props.expanded,
-      inited: this.props.expanded
+      show: expanded,
+      inited: expanded,
+      expanded
+    })
+  }
+  componentWillReceiveProps(nextProps: CollapseItemProps) {
+    const {value, name, index} = nextProps;
+    const currentName = isDef(name) ? name : index
+    const expanded = nextProps.accordion ? value === currentName : value.some((n:any) => n === currentName)
+    this.setState({
+      show: expanded,
+      inited: expanded,
+      expanded
     })
   }
   componentDidMount (){
-    if (this.props.expanded) {
+    if (this.state.expanded) {
       this.setState({
         show: true,
         inited: true
@@ -70,20 +90,21 @@ export class CollapseItem extends React.Component<CollapseItemProps, any> {
         return
       }
       const contentHeight = content.clientHeight + 'px'
-      wrapper.style.height = this.props.expanded ? 0 : contentHeight
+      wrapper.style.height = this.state.expanded ? 0 : contentHeight
       Raf.raf(() => {
-        wrapper.style.height = this.props.expanded ? contentHeight : 0
+        wrapper.style.height = this.state.expanded ? contentHeight : 0
       })
     })
   }
   onClick () {
     const name = this.props.accordion && this.props.name === this.props.value ? '' : this.props.name
-    const expanded = !this.props.expanded
+    const expanded = !this.state.expanded
+    // window.console.log(name, expanded)
     this.props.switch(name, expanded)
   }
 
   onTransitionEnd () {
-    if (!this.props.expanded) {
+    if (!this.state.expanded) {
       this.setState({
         show:false
       })
@@ -94,20 +115,20 @@ export class CollapseItem extends React.Component<CollapseItemProps, any> {
   render () {
     const {
       index,
-      expanded,
       children,
       title
     } = this.props;
     const {
       inited,
-      show
+      show,
+      expanded
     } = this.state;
     return (
       <div className={classnames('afo-collapse-item', {
         'afo-collapse-item--expanded': expanded,
         'afo-hairline--top': index
       })}>
-        <div className="afo-cell afo-cell--clickable afo-hairlines afo-collapse-item__title" onClick={this.onClick}>
+        <div className="afo-cell afo-cell--clickable afo-hairlines afo-collapse-item__title" onClick={() => this.onClick()}>
           <div className="afo-cell__title">
               <span>{title}</span>
           </div>
@@ -115,7 +136,7 @@ export class CollapseItem extends React.Component<CollapseItemProps, any> {
         </div>
         {
           inited || show  ?
-          <div ref={this.wrapperRef} className='afo-collapse-item__wrapper' onTransitionEnd={this.onTransitionEnd}>
+          <div ref={this.wrapperRef} className='afo-collapse-item__wrapper' onTransitionEnd={() => this.onTransitionEnd()}>
           <div ref={this.contentRef} className='afo-collapse-item__content'>
             {
               children
@@ -157,19 +178,20 @@ class Collapse extends React.Component<CollapseProps, any> {
       };
     });
   }
-  switch (name: any, expanded: any) {
-    if (!this.props.accordion) {
-      const value = this.props.value || []
+  switch = (name: any, expanded: any) => {
+    let value = this.state.value || []
+    if (!(this.props.accordion || false)) {
       name = expanded
-        ? value.concat(name)
-        : value.filter(activeName => activeName !== name)
+        ? value = value.concat(name)
+        : value = value.filter((activeName:any) => activeName !== name)
         this.setState({
           value
         })
     }
+    window.console.log(name, value, expanded)
     this.props.onChange ? this.props.onChange(name) : ''
     this.setState({
-      name
+      value:name
     })
   }
   render () {
@@ -181,11 +203,12 @@ class Collapse extends React.Component<CollapseProps, any> {
             return (
               <CollapseItem
                 key={index}
-                value={index}
+                value={this.state.value}
+                title={item.title}
+                name={item.name}
                 switch={this.switch}
                 index={index}
                 accordion={this.props.accordion || false}
-                expanded={this.state.value}
               >{item.children}</CollapseItem>
             )
           })

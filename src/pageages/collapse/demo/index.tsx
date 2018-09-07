@@ -15,14 +15,25 @@ class CollapseDeom extends React.Component<any, CollapseState> {
           <Collapse.Item title="1" name="1">
             111111111
           </Collapse.Item>
-        <Collapse.Item title="2" name="2">
-          22222222
-        </Collapse.Item>
-        <Collapse.Item title="3" name="3">
-          2222222222
-        </Collapse.Item>
-    </Collapse>
-
+          <Collapse.Item title="2" name="2">
+            22222222
+          </Collapse.Item>
+          <Collapse.Item title="3" name="3">
+            2222222222
+          </Collapse.Item>
+        </Collapse>
+        <p>手风琴</p>
+        <Collapse value={0} accordion={true}>
+          <Collapse.Item title="1" name="1">
+            111111111
+          </Collapse.Item>
+          <Collapse.Item title="2" name="2">
+            22222222
+          </Collapse.Item>
+          <Collapse.Item title="3" name="3">
+            2222222222
+          </Collapse.Item>
+        </Collapse>
       </div>
     );
   }

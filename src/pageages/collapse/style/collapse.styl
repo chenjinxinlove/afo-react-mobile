@@ -1,59 +1,59 @@
-@require "../../common/stylus/variable.styl"
-@require "../../common/stylus/mixin.styl"
+@require "../../../common/stylus/variable.styl"
+@require "../../../common/stylus/mixin.styl"
 .afo-hairline--top
   border-top-1px($btn-default-border)
 .afo-cell
-  width 100%
-  display flex
-  padding 10px 15px
-  box-sizing border-box
-  line-height 24px
-  position relative
-  background-color #fff
-  color #333
-  font-size 14px
-  overflow hidden
+  width: 100%
+  display: flex
+  padding: 10px 15px
+  box-sizing: border-box
+  line-height: 24px
+  position: relative
+  background-color: #fff
+  color: #333
+  font-size: 14px
+  overflow: hidden
   border-bottom-1px($btn-default-border)
   &::after
     left: 15px
   &--clickable
     &:active
-      background-color $fill-body
+      background-color: $fill-body
   &__title
-    flex 1
+    flex: 1
   &__left-icon
-    min-width 1em
-    font-size 16px
-    line-height 24px
-    margin-right 5px
+    min-width: 1em
+    font-size: 16px
+    line-height: 24px
+    margin-right: 5px
   &__right-icon
-    color #999
-    font-size 12px
-    line-height 24px
-    margin-left 5px
+    color: #999
+    font-size :12px
+    line-height: 24px
+    margin-left: 5px
     &--left::before
-      transform rotate(180deg)
+      transform: rotate(180deg)
     &--up::before
-      transform rotate(-90deg)
+      transform: rotate(-90deg)
     &--down::before
-      transform rotate(90deg)
+      transform: rotate(90deg)
 .afo-collapse-item
   &__title
     .afo-cell__right-icon::before
-      transition .3s;
-      transform rotate(90deg)
+      transition: .3s
+      transform: rotate(90deg)
     &::after
-      visibility hidden
+      visibility: hidden
   &__wrapper
-    overflow hidden
-    will-change height
-    transition height .3s ease-in-out
+    overflow: hidden
+    will-change: height
+    transition: height .3s ease-in-out
   &__content
-    padding 15px
-    background-color #fff
+    padding: 15px
+    background-color: #fff
   &--expanded
     .afo-collapse-item__title
       .afo-cell__right-icon::before
-        transform rotate(-90deg)
+        transform: rotate(-90deg)
       &::after
-        visibility visible
+        visibility: visible
