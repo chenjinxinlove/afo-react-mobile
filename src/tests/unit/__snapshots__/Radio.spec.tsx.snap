@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test snapshots 1`] = `
+<div>
+  <p>
+    基础用法
+  </p>
+  <div
+    className="afo-radio-group"
+  >
+    <div
+      className="afo-radio"
+      onClick={[Function]}
+    >
+      <span
+        className="afo-radio__input"
+      >
+        <input
+          className="afo-radio__control"
+          disabled={undefined}
+          type="radio"
+          value="1"
+        />
+        <i
+          className="afo-icon afo-icon-right"
+          onClick={undefined}
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": "18px",
+            }
+          }
+        />
+      </span>
+      <span
+        className="afo-radio__label afo-radio__label--undefined"
+        onClick={[Function]}
+      >
+        单选框 1
+      </span>
+    </div>
+    <div
+      className="afo-radio"
+      onClick={[Function]}
+    >
+      <span
+        className="afo-radio__input"
+      >
+        <input
+          className="afo-radio__control"
+          disabled={undefined}
+          type="radio"
+          value="1"
+        />
+        <i
+          className="afo-icon afo-icon-round-border"
+          onClick={undefined}
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": "18px",
+            }
+          }
+        />
+      </span>
+      <span
+        className="afo-radio__label afo-radio__label--undefined"
+        onClick={[Function]}
+      >
+        单选框 2
+      </span>
+    </div>
+  </div>
+  <p>
+    禁用状态
+  </p>
+  <div
+    className="afo-radio-group"
+  >
+    <div
+      className="afo-radio afo-radio--disabled"
+      onClick={[Function]}
+    >
+      <span
+        className="afo-radio__input"
+      >
+        <input
+          className="afo-radio__control"
+          disabled={true}
+          type="radio"
+          value="1"
+        />
+        <i
+          className="afo-icon afo-icon-right"
+          onClick={undefined}
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": "18px",
+            }
+          }
+        />
+      </span>
+      <span
+        className="afo-radio__label afo-radio__label--undefined"
+        onClick={[Function]}
+      >
+        单选框 1
+      </span>
+    </div>
+    <div
+      className="afo-radio afo-radio--disabled"
+      onClick={[Function]}
+    >
+      <span
+        className="afo-radio__input"
+      >
+        <input
+          className="afo-radio__control"
+          disabled={true}
+          type="radio"
+          value="1"
+        />
+        <i
+          className="afo-icon afo-icon-round-border"
+          onClick={undefined}
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": "18px",
+            }
+          }
+        />
+      </span>
+      <span
+        className="afo-radio__label afo-radio__label--undefined"
+        onClick={[Function]}
+      >
+        单选框 2
+      </span>
+    </div>
+  </div>
+</div>
+`;
