@@ -1,0 +1,42 @@
+@require "../../../common/stylus/variable.styl"
+.afo-radio
+  overflow hidden
+  user-select none
+
+  &__input,
+  &__label
+    display inline-block
+    vertical-align middle
+  &__input
+    height 1em
+    position relative
+    font-size 20px
+  &__control
+    position absolute
+    top 0
+    left 0
+    opacity 0
+    margin 0
+    width 100%
+    height 100%
+  &__label
+    line-height 20px
+    margin-left 10px
+
+    &--left
+      float left
+      margin 0 10px 0 0
+  .afo-icon
+    width 1em
+    pointer-events none
+
+  .afo-icon-right
+    color $brand-primary
+  .afo-icon-round-border
+    color #ccc
+
+  &--disabled
+    .afo-icon
+        color #e5e5e5
+        border-radius 100%
+        background-color #f8f8f8

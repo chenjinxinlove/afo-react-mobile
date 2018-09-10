@@ -10,6 +10,7 @@ import NavbarDemo from './pageages/navbar/demo//index';
 import NoticeBarDeom from './pageages/notice-bar/demo/index';
 import PaginationDeom from './pageages/pagination/demo/index';
 import ProgressDeom from './pageages/progress/demo/index';
+import RadioDemo from './pageages/radio/demo/index';
 import RadeDemo from './pageages/rate/demo/index';
 import SliderDemo from './pageages/slider/demo/index';
 import StepsDeom from './pageages/steps/demo/index';
@@ -43,6 +44,7 @@ class App extends React.Component {
                 <Route path="/slider" component={SliderDemo} />
                 <Route path="/steps" component={StepsDeom} />
                 <Route path="/collapse" component={CollapseDeom} />
+                <Route path='/radio' component={RadioDemo}/>
               </main>
         </div>
       </BrowserRouter>
