@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test snapshots 1`] = `
+<div>
+  <p>
+    基础用法
+  </p>
+  <div
+    className="afo-switch"
+    style={undefined}
+  >
+    <input
+      className="afo-switch__input"
+      disabled={undefined}
+      onChange={[Function]}
+      type="checkbox"
+      value={true}
+    />
+    <i
+      className="afo-switch__ui"
+    />
+    <span
+      className="afo-switch__label"
+    />
+  </div>
+  <p>
+    禁用状态
+  </p>
+  <div
+    className="afo-switch"
+    style={undefined}
+  >
+    <input
+      className="afo-switch__input"
+      disabled={true}
+      onChange={[Function]}
+      type="checkbox"
+      value={true}
+    />
+    <i
+      className="afo-switch__ui"
+    />
+    <span
+      className="afo-switch__label"
+    />
+  </div>
+</div>
+`;
