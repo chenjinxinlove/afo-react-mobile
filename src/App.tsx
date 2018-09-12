@@ -14,9 +14,11 @@ import RadioDemo from './pageages/radio/demo/index';
 import RadeDemo from './pageages/rate/demo/index';
 import SliderDemo from './pageages/slider/demo/index';
 import StepsDeom from './pageages/steps/demo/index';
+import SwitchDeom from './pageages/switch/demo/index';
 import TabDemo from './pageages/tab/demo/index';
 import TabBarDeom from './pageages/tabbar/demo/index';
 import TagDemo from './pageages/tag/demo/index';
+
 
 
 class App extends React.Component {
@@ -45,6 +47,7 @@ class App extends React.Component {
                 <Route path="/steps" component={StepsDeom} />
                 <Route path="/collapse" component={CollapseDeom} />
                 <Route path='/radio' component={RadioDemo}/>
+                <Route path='/switch' component={SwitchDeom} />
               </main>
         </div>
       </BrowserRouter>
