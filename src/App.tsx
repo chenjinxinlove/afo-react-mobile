@@ -19,6 +19,7 @@ import SwitchDeom from './pageages/switch/demo/index';
 import TabDemo from './pageages/tab/demo/index';
 import TabBarDeom from './pageages/tabbar/demo/index';
 import TagDemo from './pageages/tag/demo/index';
+import TextareaDeom from './pageages/textarea/index';
 
 
 
@@ -50,6 +51,7 @@ class App extends React.Component {
                 <Route path='/radio' component={RadioDemo}/>
                 <Route path='/switch' component={SwitchDeom} />
                 <Route path="/stepper" component={StepperDeom} />
+                <Route path="/textarea" component={TextareaDeom} />
               </main>
         </div>
       </BrowserRouter>
