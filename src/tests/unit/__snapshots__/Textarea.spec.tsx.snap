@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test snapshots 1`] = `
+<div>
+  <p>
+    基础用法
+  </p>
+  <div
+    className="afo-textarea-wrapper"
+    style={undefined}
+  >
+    <textarea
+      className="afo-textarea"
+      disabled={false}
+      maxLength={60}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onInput={[Function]}
+      placeholder="please type here..."
+      value="xxxxxvalue"
+    />
+    <span
+      className="afo-textarea__indicator"
+    >
+      50
+    </span>
+  </div>
+</div>
+`;
