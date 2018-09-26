@@ -5,6 +5,7 @@ import ButtonDemo from './pageages/button/demo/index';
 import CardDemo from './pageages/card/demo/index';
 import CollapseDeom from './pageages/collapse/demo/index';
 import IconDemo from './pageages/icon/demo/index';
+import InputDemo from './pageages/input/demo/index';
 import LoadingDemo from './pageages/loading/demo//index';
 import NavbarDemo from './pageages/navbar/demo//index';
 import NoticeBarDeom from './pageages/notice-bar/demo/index';
@@ -52,6 +53,7 @@ class App extends React.Component {
                 <Route path='/switch' component={SwitchDeom} />
                 <Route path="/stepper" component={StepperDeom} />
                 <Route path="/textarea" component={TextareaDeom} />
+                <Route path="/input" component={InputDemo} />
               </main>
         </div>
       </BrowserRouter>

@@ -1,6 +1,7 @@
 import classnames from 'classnames';
 import * as React from 'react';
 import { withDefaultProps } from '../utils';
+import './style/input.styl';
 
 const defaultProps = {
   type: 'text',
@@ -15,7 +16,7 @@ const defaultProps = {
   passShow: false
 }
 
-type DefaultProps = Partial<typeof defaultProps>;
+type DefaultProps = Readonly<typeof defaultProps>;
 
 type InputInnerProps = {
   prepend?: React.ReactNode;
@@ -25,12 +26,12 @@ type InputInnerProps = {
   onChange?: (value: string) => void;
   onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
   onFocus?: (e: React.FocusEvent<HTMLInputElement>) => void;
-  children?: React.ReactChild;
 } & DefaultProps;
 
 const InputState = {
   isFocus: false,
-  inputValue: ''
+  inputValue: '',
+  open: false
 };
 
 type State = Readonly<typeof InputState>;
@@ -38,9 +39,16 @@ type State = Readonly<typeof InputState>;
 
 const Input = withDefaultProps(
   defaultProps,
-  class InputInner extends React.Component<InputInnerProps, State> {
+  class extends React.Component<InputInnerProps, State> {
     readonly state: State = InputState;
     private inputRef: React.RefObject<any> = React.createRef();
+    getDerivedStateFromProps() {
+      this.setState({
+        open: this.props.passShow,
+        inputValue: this.props.value
+      })
+    }
+
     private changeHander = (e: React.ChangeEvent<HTMLInputElement>):void => {
       this.setState({
         inputValue: e.target.value
@@ -59,33 +67,45 @@ const Input = withDefaultProps(
         isFocus: true
       })
     }
+    private handleClear = ():void => {
+      this.setState({
+        inputValue: ''
+      })
+      this.inputRef.current.focus();
+    }
+    private handlePwdEye = ():void => {
+      this.setState({
+        open: !this.state.open
+      })
+    }
     public render() {
       const {
         type,
-        value,
         disabled,
         readonly,
-        maxlength,
-        placehololder,
         autocomplete,
         autofocus,
         clearable,
         passShow,
         className,
         style,
-        children,
         prepend,
+        append,
         ...restProps
       } = this.props;
       const {
         isFocus,
-        inputValue
+        inputValue,
+        open
       } = this.state;
       const inputCls = classnames('afo-input', className, {
         'afo-input--active': isFocus
       })
+      const inputType:string = type === 'password' && passShow ? 'text': type;
+      const showClear:boolean = clearable && inputValue && !readonly && !disabled ? true: false;
+      const showPwdEye:boolean = type === 'password' && passShow && !disabled ? true: false;
       return (
-        <div className={inputCls}>
+        <div className={inputCls} style={style}>
           {
             prepend ? <div className="afo-input__prepend">{prepend}</div> : ''
           }
@@ -94,17 +114,37 @@ const Input = withDefaultProps(
             ref={this.inputRef}
             value={inputValue}
             {...restProps}
-            type={type}
+            type={inputType}
             disabled={disabled}
             readOnly={readonly}
+
             autoComplete={autocomplete}
             autoFocus={autofocus}
             onFocus={(e) => this.handleFoucus(e)}
             onBlur={(e) => this.handleBlur(e)}
             onChange={(e) => this.changeHander(e)}
           />
+          {
+            append || showClear || showPwdEye?
+            <div className="afo-input__append">
+              {
+                showClear ? <div className="afo-input__clear"  onClick={() => this.handleClear()}>
+                  <i className="afo-wrong" />
+                </div> : ''
+              }
+              {
+                showPwdEye ?
+                <div className="afo-input__eye"  onClick={() => this.handlePwdEye()}>
+                  <i className={open ? 'afo-inupt__eye--visible' : 'afo-inupt__eye--invisible'} />
+                </div> : ''
+              }
+              {append}
+            </div> :''
+          }
         </div>
       )
     }
   }
 )
+
+export default Input;

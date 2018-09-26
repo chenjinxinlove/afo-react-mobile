@@ -16,7 +16,7 @@ export const withDefaultProps = <P extends object, DP extends Partial<P> = Parti
   type RequiredProps = Omit<P, keyof DP>
   // we are re-creating our props definition by creating and intersection type
   // between all original props mapped to be optional and required to be required
-  type Props = Partial<DP> & Required<RequiredProps>
+  type Props = Partial<DP> & RequiredProps
 
   // here we set our defaultProps
   Cmp.defaultProps = defaultProps
