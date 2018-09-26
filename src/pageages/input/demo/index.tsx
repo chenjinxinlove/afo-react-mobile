@@ -5,7 +5,7 @@ class InputDemo extends React.Component <any, any> {
   render() {
     return (
       <>
-        <Input style={{width: '30px'}}/>
+        <Input placeholder="asdsdfsdf" value="" type="password" passShow={true}/>
       </>
 
     )

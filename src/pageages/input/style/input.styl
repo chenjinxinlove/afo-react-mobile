@@ -3,3 +3,49 @@
 
 .afo-input
   display: flex
+  align-self: center
+  font-size: $fontsize-medium
+  line-height 1.429
+  background-color: $color-white
+  border-1px($color-row-line)
+  &__field
+    display: block
+    flex: 1
+    width: 100%
+    padding: 10px
+    box-sizing: border-box
+    color: $color-grey
+    line-height: inherit
+    background-color: inherit
+    border-radius: 2px
+    outline: none
+    &::-webkit-input-placeholder
+      color: $color-light-grey-s!important
+      text-overflow: ellipsis
+    + .afo-input__append
+      margin-left: -5px
+  &--active
+    &::after
+      border-color: $brand-primary
+  &__prepend, &__append
+    display: flex
+    align-items: center
+  &__prepend
+    + .afo-input__field
+      margin-left: -5px
+  &__clear, &__eye
+    width: 1em
+    height: 1em
+    line-height: 1
+    padding: 10px
+    box-sizing: content-box
+    color: $color-light-grey
+    > i
+      display: inline-block
+      transform: scale(1.2)
+  &__eye
+    >
+      &--invisible, &--visible
+        transform: scale(1.4)
+
+

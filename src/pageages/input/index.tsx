@@ -8,8 +8,8 @@ const defaultProps = {
   value: '',
   disabled: false,
   readonly: false,
-  maxlength: 60,
-  placehololder: '',
+  maxLength: 60,
+  placeholder: '',
   autofocus: false,
   autocomplete: '',
   clearable: false,
@@ -42,7 +42,7 @@ const Input = withDefaultProps(
   class extends React.Component<InputInnerProps, State> {
     readonly state: State = InputState;
     private inputRef: React.RefObject<any> = React.createRef();
-    getDerivedStateFromProps() {
+    componentWillMount() {
       this.setState({
         open: this.props.passShow,
         inputValue: this.props.value
@@ -91,6 +91,7 @@ const Input = withDefaultProps(
         style,
         prepend,
         append,
+        value,
         ...restProps
       } = this.props;
       const {
@@ -101,7 +102,7 @@ const Input = withDefaultProps(
       const inputCls = classnames('afo-input', className, {
         'afo-input--active': isFocus
       })
-      const inputType:string = type === 'password' && passShow ? 'text': type;
+      const inputType:string = type === 'password' && (passShow && open) ? 'text': type;
       const showClear:boolean = clearable && inputValue && !readonly && !disabled ? true: false;
       const showPwdEye:boolean = type === 'password' && passShow && !disabled ? true: false;
       return (
@@ -117,7 +118,6 @@ const Input = withDefaultProps(
             type={inputType}
             disabled={disabled}
             readOnly={readonly}
-
             autoComplete={autocomplete}
             autoFocus={autofocus}
             onFocus={(e) => this.handleFoucus(e)}
@@ -129,13 +129,13 @@ const Input = withDefaultProps(
             <div className="afo-input__append">
               {
                 showClear ? <div className="afo-input__clear"  onClick={() => this.handleClear()}>
-                  <i className="afo-wrong" />
+                  <i className="afo-icon afo-icon-wrong" />
                 </div> : ''
               }
               {
                 showPwdEye ?
                 <div className="afo-input__eye"  onClick={() => this.handlePwdEye()}>
-                  <i className={open ? 'afo-inupt__eye--visible' : 'afo-inupt__eye--invisible'} />
+                  <i className={open ? 'afo-icon afo-icon-eye-visible' : 'afo-icon afo-icon-eye-invisible'} />
                 </div> : ''
               }
               {append}
