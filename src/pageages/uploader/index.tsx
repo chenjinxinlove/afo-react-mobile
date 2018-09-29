@@ -18,7 +18,7 @@ type UploaderProps = {
   oversize?: (files: FileList) => void;
   className?: string;
   style?: React.CSSProperties;
-  children?: React.ReactChildren;
+  children?: React.ReactNode;
 } & DefaultProps;
 
 const Uploader = withDefaultProps(

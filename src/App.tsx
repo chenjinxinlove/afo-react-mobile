@@ -20,8 +20,8 @@ import SwitchDeom from './pageages/switch/demo/index';
 import TabDemo from './pageages/tab/demo/index';
 import TabBarDeom from './pageages/tabbar/demo/index';
 import TagDemo from './pageages/tag/demo/index';
-import TextareaDeom from './pageages/textarea/index';
-
+import TextareaDeom from './pageages/textarea/demo/index';
+import UploaderDeom from './pageages/uploader/demo/index';
 
 
 class App extends React.Component {
@@ -54,6 +54,7 @@ class App extends React.Component {
                 <Route path="/stepper" component={StepperDeom} />
                 <Route path="/textarea" component={TextareaDeom} />
                 <Route path="/input" component={InputDemo} />
+                <Route path="/uploader" component={UploaderDeom} />
               </main>
         </div>
       </BrowserRouter>
