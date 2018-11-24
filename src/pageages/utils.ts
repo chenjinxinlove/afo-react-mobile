@@ -25,3 +25,39 @@ export const withDefaultProps = <P extends object, DP extends Partial<P> = Parti
   // for original props  and setting the correct return type
   return (Cmp as React.ComponentType<any>) as React.ComponentType<Props>
 }
+
+
+export const scrollUtils = {
+  // get nearest scroll element
+  getScrollEventTarget (element: any, rootParent = window) {
+    let currentNode = element
+    // bugfix, see http://w3help.org/zh-cn/causes/SD9013 and http://stackoverflow.com/questions/17016740/onscroll-function-is-not-working-for-chrome
+    while (currentNode && currentNode.tagName !== 'HTML' && currentNode.tagName !== 'BODY' && currentNode.nodeType === 1 && currentNode !== rootParent) {
+      const overflowY = this.getComputedStyle(currentNode).overflowY
+      if (overflowY === 'scroll' || overflowY === 'auto') {
+        return currentNode
+      }
+      currentNode = currentNode.parentNode
+    }
+    return rootParent
+  },
+
+  getScrollTop (element: any) {
+    return 'scrollTop' in element ? element.scrollTop : element.pageYOffset
+  },
+
+  setScrollTop (element: any, value: string) {
+    'scrollTop' in element ? element.scrollTop = value : element.scrollTo(element.scrollX, value)
+  },
+
+  // get distance from element top to page top
+  getElementTop (element: any) {
+    return (element === window ? 0 : element.getBoundingClientRect().top) + this.getScrollTop(window)
+  },
+
+  getVisibleHeight (element: any) {
+    return element === window ? element.innerHeight : element.getBoundingClientRect().height
+  },
+
+  getComputedStyle: document.defaultView.getComputedStyle.bind(document.defaultView)
+}
